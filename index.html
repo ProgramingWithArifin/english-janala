@@ -37,7 +37,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </div>
-          <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow space-y-2">
+          <ul tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow space-y-2">
             <li><a href="#faq" class=""><i class="fa-solid fa-circle-question"></i>FAQ</a></li>
             <li><a href="#learn" class=""><i class="fa-solid fa-book-open"></i>Learn</a></li>
             <li><a href="" class=""><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
@@ -53,7 +54,8 @@
         <ul class="menu menu-horizontal px-1 space-x-3">
           <li><a href="#faq" class="btn btn-primary btn-outline"><i class="fa-solid fa-circle-question"></i>FAQ</a></li>
           <li><a href="#learn" class="btn btn-primary btn-outline"><i class="fa-solid fa-book-open"></i>Learn</a></li>
-          <li><a href="" class="btn btn-primary btn-outline"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+          <li><a href="" class="btn btn-primary btn-outline"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -61,7 +63,8 @@
   <main class="flex flex-col-reverse md:flex-row items-center justify-between w-11/12 mx-auto my-5 gap-10">
     <div class="content flex-1 space-y-8 text-center md:text-left">
       <h1 class="text-4xl font-bold"><span class="text-info">English </span>is Easy!!</h1>
-      <p class="font-bangla text-xl">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+      <p class="font-bangla text-xl">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা
+        বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
       <form class="flex flex-col gap-3 items-center md:items-start" action="">
         <input class="input" type="text" placeholder="Enter Your Name">
         <input class="input" type="password" placeholder="Enter Your Password">
@@ -73,19 +76,110 @@
     </div>
   </main>
   <section id="learn" class="w-11/12 mx-auto my-5 space-y-8">
-    <h2 class="text-3xl font-bold text-center"><span class="text-info">Let's</span> Learn Vocabularies</h2>
+    <h2 class="text-4xl font-bold text-center"><span class="text-info">Let's</span> Learn Vocabularies</h2>
     <div id="level-container" class="flex justify-center gap-7 flex-wrap ">
     </div>
 
   </section>
-  <section id="word-container"  class="cards bg-blue-50-100 rounded p-10 w-11/12 mx-auto my-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
+  <section id="spinner" class="flex justify-center items-center p-10 hidden">
+    <span class="loading loading-spinner text-primary"></span>
+  </section>
+  <section id="word-container"
+    class="cards bg-blue-50-100 rounded p-10 w-11/12 mx-auto my-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
     <div id="not-selected" class="font-bangla text-center col-span-full p-15 space-y-6">
       <p class="text-xl font-medium text-gray-600">আপনি এখনো কোন Lesson Select করেন নি।</p>
       <h2 class="text-4xl font-bold">একটি Lesson Select করুন।</h2>
     </div>
 
   </section>
-  <section id="faq"></section>
+  <section id="faq">
+    <h2 class="font-bold text-4xl my-5 text-center"><span class="text-[#00BCFF]">Frequently</span> Asked Questions</h2>
+    <div class="bg-gray-200 rounded-xl py-10 px-10 mt-10">
+      <div class=" collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title font-semibold">1.How can I start learning English on this website?</div>
+        <div class="collapse-content text-sm">You can start by exploring our beginner lessons, interactive exercises,
+          and quizzes. We also offer structured courses to
+          guide you step by step.</div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-semibold">2.Is this website free to use?</div>
+        <div class="collapse-content text-sm">Yes, You can use this website free.</div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-semibold">3. Do I need to create an account?<div>No, you don't need to create an
+            account.</div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title font-semibold">4. How can I build my English vocabulary?</div>
+          <div class="collapse-content text-sm">You can start by exploring our beginner lessons, interactive exercises,
+            and quizzes. We also offer structured courses to
+            guide you step by step.</div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title font-semibold">5. Do you offer certificates for completed courses?</div>
+          <div class="collapse-content text-sm">Yes, After completing the courses successfully you will get a
+            certificates .</div>
+        </div>
+      </div>
+  </section>
+  <footer class="footer sm:footer-horizontal max-sm:flex-col-reverse gap-2 bg-gray-200 items-center  p-10 text-gray-950 rounded-xl mx-auto flex justify-between space-y-2">
+    <aside class="max-sm:flex max-sm:flex-col-reverse">
+      <a class="btn btn-ghost hover:bg-transparent border-0 text-xl shadow-none max-sm:mx-auto">
+        <span>English</span>
+        <img src="./assets/logo.png" alt="">
+        <span class="font-bangla">জানালা</span>
+      </a>
+      <p class="text-center">
+        ইংরেজি শিখুন সহজে
+        <br />
+        Providing ED-Tech Applications since 2025
+      </p>
+    </aside>
+    <nav>
+      <h6 class="footer-title">FOLLOW US </h6>
+      <div class="grid grid-flow-col gap-4">
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+            </path>
+          </svg>
+        </a>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+            </path>
+          </svg>
+        </a>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+            </path>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </footer>
+  <dialog id="detail_modal" class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box">
+      <div id="details-box" class="space-y-2">
+
+      </div>
+      <div class="modal-action">
+        <form method="dialog">
+          <!-- if there is a button in form, it will close the modal -->
+          <button class="btn">Close</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
   <script src="js/script.js"></script>
 </body>
 
